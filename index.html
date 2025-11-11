@@ -1,4 +1,414 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Stayton Credit Solutions — Best Repair In The Business</title>
+  <meta name="description" content="Texas-owned, FCRA/CROA compliant credit repair. Free credit review and same-day start. Disputes for reporting errors, mixed files, duplicate and obsolete items. Transparent pricing." />
+  <meta name="keywords" content="credit repair, disputing errors, mixed file, duplicate tradelines, obsolete items, Texas credit repair, North Richland Hills, FCRA, CROA" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Stayton Credit Solutions — Best Repair In The Business" />
+  <meta property="og:description" content="Free Credit Review • Same-Day Start • Texas-Owned • Transparent Pricing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/assets/og-image.jpg" />
+
+  <!-- Canonical & Favicon -->
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Roboto + Inter (safe fallbacks) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#003566;  /* deep navy */
+      --gold:#D4AF37;  /* classic gold */
+      --ink:#0b1220;
+      --muted:#6b7280;
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --ring:rgba(0,53,102,.14);
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.5;
+    }
+
+    /* Header / Nav */
+    .nav{
+      position:sticky;top:0;z-index:50;
+      background:#fff;
+      border-bottom:1px solid #e8eef6;
+      backdrop-filter:saturate(160%) blur(6px);
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:42px;width:auto;display:block}
+    .brand .title{font-weight:800;letter-spacing:.2px;color:var(--navy)}
+    .nav a{color:var(--ink);text-decoration:none;font-weight:600;margin:0 10px}
+    .nav a:hover{color:var(--navy)}
+    .cta-btn{
+      background:var(--navy);color:#fff;border:none;border-radius:999px;
+      padding:10px 18px;font-weight:700;box-shadow:var(--shadow);
+    }
+    .cta-btn:hover{filter:brightness(1.05)}
+    .ghost{background:transparent;border:2px solid var(--navy);color:var(--navy)}
+    .stack{display:flex;align-items:center;gap:10px}
+
+    /* Hero */
+    .hero{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:24px;
+      padding:48px 0 22px;
+    }
+    .badge{display:inline-block;background:rgba(0,53,102,.06);color:var(--navy);
+      border:1px solid rgba(0,53,102,.18);padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.2px}
+    h1{font-size:42px;line-height:1.12;margin:14px 0 8px;color:var(--ink)}
+    .lead{color:var(--muted);font-size:18px;margin-bottom:16px}
+    .hero-card{
+      background:linear-gradient(180deg,#fff, #f8fbff);
+      border:1px solid #e8eef6;border-radius:var(--radius);padding:18px 18px 6px;box-shadow:var(--shadow)
+    }
+    .hero-card .row{display:flex;gap:10px;flex-wrap:wrap}
+    .hero-card .row > a{flex:1 1 200px;text-align:center;text-decoration:none}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;
+      border:1px solid #e6ecf4;background:#fff;font-weight:700;box-shadow:var(--shadow)}
+    .chip .small{font-size:13px;color:var(--muted);font-weight:600}
+
+    /* Sections */
+    .section{padding:28px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid #e8eef6;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:2px 0 10px;color:var(--navy)}
+    ul.clean{list-style:none;padding-left:0;margin:0}
+    ul.clean li{padding:6px 0;border-bottom:1px dashed #edf2f7}
+    ul.clean li:last-child{border-bottom:none}
+    .muted{color:var(--muted)}
+    .hr{height:1px;background:#e8eef6;margin:28px 0}
+
+    /* Pricing */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .tier{background:#fff;border:1px solid #e8eef6;border-radius:20px;padding:18px;box-shadow:var(--shadow);position:relative}
+    .tier.popular{border-color:var(--gold);box-shadow:0 12px 40px rgba(212,175,55,.22)}
+    .price{font-size:34px;font-weight:800;color:var(--navy);margin:8px 0}
+    .per{font-size:14px;color:var(--muted)}
+    .tag{position:absolute;top:12px;right:12px;background:var(--gold);color:#15253a;font-weight:800;font-size:12px;padding:6px 10px;border-radius:999px}
+
+    /* Testimonials / FAQ */
+    .twocol{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+    /* Contact */
+    .contact{
+      background:linear-gradient(180deg,#fff,#f7fbff);
+      border:1px solid #e8eef6;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)
+    }
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    input,textarea{
+      width:100%;padding:12px 12px;border-radius:12px;border:1px solid #dbe5f1;background:#fff;
+      font-size:15px;outline:0;transition:box-shadow .2s
+    }
+    input:focus,textarea:focus{box-shadow:0 0 0 4px var(--ring)}
+    textarea{min-height:120px;resize:vertical}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:12px 16px;border-radius:999px;border:none;background:var(--navy);color:#fff;font-weight:800;
+      text-decoration:none;box-shadow:var(--shadow)
+    }
+    .btn:hover{filter:brightness(1.05)}
+    .btn-outline{background:transparent;border:2px solid var(--navy);color:var(--navy)}
+
+    /* Footer */
+    footer{padding:26px 0;color:var(--muted);font-size:14px}
+    .footgrid{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    .credits{color:#8aa2bf}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .pricing{grid-template-columns:1fr}
+      .twocol{grid-template-columns:1fr}
+      .footgrid{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Stayton Credit Solutions logo (1930s gentleman)">
+        <div class="title">Stayton Credit Solutions</div>
+      </div>
+      <nav class="stack">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="cta-btn" href="tel:+16828889241">Call (682) 888-9241</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="badge">Texas-Owned • FCRA/CROA Compliant</span>
+        <h1>Free Credit Review. <span style="color:var(--navy)">Same-Day Start.</span></h1>
+        <p class="lead">We fix reporting errors, mixed files, duplicate and obsolete items — the right way. Transparent updates every 30 days. No false promises.</p>
+
+        <div class="hero-card">
+          <div class="row">
+            <a class="btn" href="tel:+16828889241">📞 Call / Text Now</a>
+            <a class="btn btn-outline" href="mailto:staytoncory6@gmail.com">✉️ Email Us</a>
+            <a class="btn" href="pricing.pdf" download>⬇️ Download Pricing (PDF)</a>
+          </div>
+          <div class="row" style="margin:12px 0 4px">
+            <span class="chip">✔ Free Credit Review <span class="small">today</span></span>
+            <span class="chip">✔ Same-Day Letters</span>
+            <span class="chip">✔ Cancel Anytime</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side quick facts -->
+      <div class="card">
+        <h3>What we do</h3>
+        <ul class="clean">
+          <li><strong>Audits & Disputes</strong> — all 3 bureaus</li>
+          <li>Fix <em>errors, mixed files, duplicate, obsolete</em></li>
+          <li>FCRA/CROA-compliant letters & timelines</li>
+          <li>Identity theft & fraud affidavit support</li>
+          <li>Goodwill & pay-for-delete (when appropriate)</li>
+        </ul>
+        <div class="hr"></div>
+        <p class="muted"><strong>Goals:</strong> qualify for an apartment/home, refinance a car, lower insurance, reduce stress.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="section">
+      <h2 style="color:var(--navy);margin:0 0 10px">Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Audits & Disputes</h3>
+          <ul class="clean">
+            <li>Tri-bureau credit audit & itemization</li>
+            <li>Evidence gathering & documentation</li>
+            <li>Tracking & escalation when needed</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Score Building</h3>
+          <ul class="clean">
+            <li>Utilization optimization plan</li>
+            <li>Late-payment guidance & creditor escalations</li>
+            <li>90-day personalized action roadmap</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Docs & Education</h3>
+          <ul class="clean">
+            <li>Welcome kit + step-by-step portal access</li>
+            <li>Letter library & progress tracking</li>
+            <li>“How credit works” mini course</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <h2 style="color:var(--navy);margin:0 0 10px">Transparent Pricing</h2>
+      <div class="pricing">
+        <div class="tier">
+          <h3>Essential</h3>
+          <div class="price">$99<span class="per">/month</span></div>
+          <ul class="clean">
+            <li>Up to <strong>2 dispute types</strong>/cycle</li>
+            <li>Errors, obsolete items</li>
+            <li>30-day updates</li>
+          </ul>
+          <a class="btn" href="#contact">Get Started</a>
+        </div>
+
+        <div class="tier popular">
+          <div class="tag">Most Popular</div>
+          <h3>Advanced</h3>
+          <div class="price">$159<span class="per">/month</span></div>
+          <ul class="clean">
+            <li>Up to <strong>4 dispute types</strong>/cycle</li>
+            <li>Errors, mixed files, duplicates, obsolete</li>
+            <li>Goodwill & pay-for-delete letters</li>
+          </ul>
+          <a class="btn" href="#contact">Start Advanced</a>
+        </div>
+
+        <div class="tier">
+          <h3>Elite</h3>
+          <div class="price">$199<span class="per">/month</span></div>
+          <ul class="clean">
+            <li>Unlimited disputes / cycle</li>
+            <li>ID theft support + Full Kit</li>
+            <li>Priority handling</li>
+          </ul>
+          <a class="btn" href="#contact">Go Elite</a>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:18px">
+        <div class="card">
+          <h3>One-Time Fees</h3>
+          <ul class="clean">
+            <li>Initial tri-bureau audit — <strong>$99</strong></li>
+            <li>Identity theft/fraud packet — <strong>$50</strong></li>
+            <li>Full credit repair kit — <strong>$80</strong> (or free w/ subscription)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Add-Ons</h3>
+          <ul class="clean">
+            <li>Additional deletions after first 10 — <strong>$20 each</strong></li>
+            <li>Rush processing (48h letters) — <strong>$25</strong></li>
+            <li>Goodwill & PFD negotiation — <strong>Included</strong></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Customer Care</h3>
+          <ul class="clean">
+            <li>Cancel anytime after 3 days (per law)</li>
+            <li>No long-term contracts</li>
+            <li>Late payment fee — <strong>$50</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF + FAQ -->
+    <section class="section twocol" id="faq">
+      <div class="card">
+        <h3>What results can I expect?</h3>
+        <p class="muted">We don’t make guarantees of specific score outcomes. Every file is unique. We follow FCRA/CROA and use proven, compliant strategies tailored to your history.</p>
+        <div class="hr"></div>
+        <h3>How fast is the process?</h3>
+        <p class="muted">We send your first round of compliant letters the same day you’re onboarded. Updates go out every 30 days as bureaus respond.</p>
+        <div class="hr"></div>
+        <h3>Can I cancel?</h3>
+        <p class="muted">Yes. Cancel anytime after 3 days as required by law. No long-term contracts.</p>
+      </div>
+
+      <div class="card">
+        <h3>Client Reviews</h3>
+        <ul class="clean">
+          <li>“Professional, fast, and honest. I felt informed at every step.” — <em>Taylor W.</em></li>
+          <li>“They found mixed-file errors I never knew existed. Huge help.” — <em>Marcus P.</em></li>
+          <li>“Transparent pricing and real updates. 10/10.” — <em>A. Nguyen</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="contact">
+        <div class="row" style="align-items:center;justify-content:space-between">
+          <h2 style="color:var(--navy);margin:0">Get Your Free Credit Review</h2>
+          <div class="stack">
+            <a class="btn" href="tel:+16828889241">📞 (682) 888-9241</a>
+            <a class="btn btn-outline" href="mailto:staytoncory6@gmail.com">✉️ staytoncory6@gmail.com</a>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+          <div class="row">
+            <input name="name" placeholder="Full name" required />
+            <input name="phone" placeholder="Phone" />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="row">
+            <textarea name="message" placeholder="Tell us your goals (home, auto refi, removing errors, etc.)" required></textarea>
+          </div>
+          <div class="row">
+            <button class="btn" type="submit">Request Review</button>
+            <a class="btn btn-outline" href="pricing.pdf" download>⬇️ Download Pricing (PDF)</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footgrid">
+        <div>
+          <strong>Stayton Credit Solutions</strong><br>
+          8500 Harwood Rd, North Richland Hills, TX 76180 • <a href="tel:+16828889241">(682) 888-9241</a> •
+          <a href="mailto:staytoncory6@gmail.com">staytoncory6@gmail.com</a><br>
+          Texas-Owned • FCRA • CROA compliant • No false promises
+        </div>
+        <div class="credits">
+          © <span id="year"></span> Stayton Credit Solutions — Best Repair In The Business
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">
+        Compliance Notice: We follow the Fair Credit Reporting Act (FCRA) and the Credit Repair Organizations Act (CROA).
+        We do not guarantee specific score outcomes. Each result depends on individual history, reporting, and creditor responses.
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Stayton Credit Solutions",
+    "image":"https://YOUR-DOMAIN.com/assets/logo.png",
+    "telephone":"+1-682-888-9241",
+    "email":"staytoncory6@gmail.com",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"8500 Harwood Rd",
+      "addressLocality":"North Richland Hills",
+      "addressRegion":"TX",
+      "postalCode":"76180",
+      "addressCountry":"US"
+    },
+    "url":"https://YOUR-DOMAIN.com/",
+    "priceRange":"$$",
+    "slogan":"Best Repair In The Business",
+    "sameAs":[
+      "https://www.facebook.com/YOUR-PAGE",
+      "https://www.instagram.com/YOUR-PAGE",
+      "https://www.linkedin.com/company/YOUR-PAGE"
+    ],
+    "areaServed":{
+      "@type":"GeoCircle",
+      "geoMidpoint":{"@type":"GeoCoordinates","latitude":32.8343,"longitude":-97.2289},
+      "geoRadius":"80000"
+    }
+  }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />

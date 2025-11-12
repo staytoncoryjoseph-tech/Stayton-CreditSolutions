@@ -2,7 +2,20 @@
 /* ===========================
    PRICING DOWNLOAD BUTTONS
    =========================== */
-<a href="form.html" class="button">🧾 Download Client Form</a>
+.button {
+  display: inline-block;
+  background-color: #0a1d3f;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #c7a008;
+  color: #0a1d3f;
+}
+
 
 .downloads {
   display: flex;

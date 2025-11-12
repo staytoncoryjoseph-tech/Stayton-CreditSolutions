@@ -2,6 +2,8 @@
 /* ===========================
    PRICING DOWNLOAD BUTTONS
    =========================== */
+<a href="form.html" class="button">🧾 Download Client Form</a>
+
 .downloads {
   display: flex;
   gap: 1rem;

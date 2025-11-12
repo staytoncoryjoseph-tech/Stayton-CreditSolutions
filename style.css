@@ -8,6 +8,10 @@
   transition:.2s ease;
 }
 .btn-download:hover{ background:#c7a008; color:#0a1d3f; }
+.theme,
+,download { 
+   display: none !important;
+}
 
 .button {
   display: inline-block;

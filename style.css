@@ -1,4 +1,47 @@
 /* Core Styles — Stayton Credit Solutions */
+/* ===========================
+   PRICING DOWNLOAD BUTTONS
+   =========================== */
+.downloads {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  border: 2px solid #0b1a33; /* Navy border */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #0b1a33; /* Navy */
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #d4af37; /* Gold hover */
+  color: #0b1a33;
+  border-color: #d4af37;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #0b1a33;
+}
+
+.btn-outline:hover {
+  background-color: #0b1a33;
+  color: #ffffff;
+}
+
 :root {
   --navy: #0a1f44;
   --gold: #d4af37;
